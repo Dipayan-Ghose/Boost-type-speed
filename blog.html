@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body class="container">
+    <header class="text-center">
+        <h2 class="text-primary">Answers of The Given Questions</h2>
+    </header>
+    <article class="mb-5">
+        <div class="mt-5">
+            <h3 class="text-primary">Number 1</h3>
+            <table class="table">
+                <thead class="text-center">
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Local Storage</th>
+                        <th scope="col"> Session Storage</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>The storage capacity of local storage is 5MB/10MB</td>
+                        <td>The storage capacity of session storage is 5MB</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>The client can only read local storage</td>
+                        <td>The client can only read local storage</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>As it is not session-based, it must be deleted via javascript or manually</td>
+                        <td>It’s session-based and works per window or tab. <br> This means that data is stored only for
+                            the duration of a session, until the browser (or tab) is closed</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-5">
+            <h3 class="text-primary">Number 2</h3>
+            <table class="table">
+                <thead class="text-center">
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Local Scope</th>
+                        <th scope="col">Global Scope</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td> In JavaScript, variables are defined with function scope instead of block scope. If any
+                            variable is defined in “if/else block” or “for block” then that variable will be defined
+                            with function scope instead of block scope, i.e. it will be visible to whole function,
+                            unlike other programming languages where variable is defined with block scope and is visible
+                            to that block only.
+
+                        </td>
+                        <td>Variables which are defined outside the function, are defined with global scope. We should
+                            minimize the use of global scope variables, because if two or more than two
+                            functions/developers are using the global variable of same name then result may be
+                            unexpected and can lead to hard-to-find bugs. So we always declare variables with var
+                            keyword.</td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-5">
+            <h3 class="text-primary">Event Loop Working Process</h3>
+            <p>
+                JavaScript has a runtime model based on an event loop, which is responsible for executing the code,
+                collecting and processing events, and executing queued sub-tasks. The event loop is a process that waits
+                for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the
+                Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are
+                any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same
+                process.
+            </p>
+        </div>
+        <div class="mt-5">
+            <h3 class="text-primary">Get Undefined</h3>
+            <p>
+                A variable or an object has an undefined value when no value is assigned before using it. If we have not
+                assigned any value to a variable. Then a variable lacks a value. So it is undefined.We
+                will get undefined value when we call a non-existent property or method of an object. Again, a function Sum
+                does not return any result but still we try to assign its resulted value to a variable. So in this case,
+                result will be undefined.An undefined evaluates to false when used in conditional expression.
+            </p>
+        </div>
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
